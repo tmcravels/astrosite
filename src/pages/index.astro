@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "Home Page"
 ---
 
@@ -13,12 +15,13 @@ const pageTitle = "Home Page"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<h2>WELKOM BIJ</h2>
 		<h1>TMC RAVELS</h1>
+		<h1>{pageTitle}</h1>
 		<h3>Op deze website delen we onze evenementen, foto's, informatie over onze club en over de hobby. Twijfel niet om ons te contacteren als je zelf ook wilt starten met modelvliegen.</h3>
 	
 		<p>Klik <a href="https://docs.astro.build/en/tutorial/2-pages/3/">hier</a> om de tutorial verder af te maken. Momenteel zat je op stap 2.3.</p>
-	
+		<Footer />
 	</body>
 </html>
