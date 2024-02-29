@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = "Home Page"
 ---
 
@@ -12,9 +13,7 @@ const pageTitle = "Home Page"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Navigation />
 		<h2>WELKOM BIJ</h2>
 		<h1>TMC RAVELS</h1>
 		<h3>Op deze website delen we onze evenementen, foto's, informatie over onze club en over de hobby. Twijfel niet om ons te contacteren als je zelf ook wilt starten met modelvliegen.</h3>
