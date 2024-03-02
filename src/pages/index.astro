@@ -1,30 +1,9 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h2>WELKOM BIJ</h2>
-		<h1>TMC RAVELS</h1>
-		<h1>{pageTitle}</h1>
-		<h3>Op deze website delen we onze evenementen, foto's, informatie over onze club en over de hobby. Twijfel niet om ons te contacteren als je zelf ook wilt starten met modelvliegen.</h3>
-	
-		<p>Klik <a href="https://docs.astro.build/en/tutorial/2-pages/3/">hier</a> om de tutorial verder af te maken. Momenteel zat je op stap 2.3.</p>
-		<Footer />
-		<script>
-			import "../scripts/menu.js";
-		</script>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Welkom op de website van TMC Ravels</h2>
+	<h3>Op deze website delen we onze evenementen, foto's, informatie over onze club en over de hobby. Twijfel niet om ons te contacteren als je zelf ook wilt starten met modelvliegen.</h3>
+	<p>Klik <a href="https://docs.astro.build/en/tutorial/2-pages/3/">hier</a> om de tutorial verder af te maken. Momenteel zat je op stap 2.3.</p>
+</BaseLayout>
