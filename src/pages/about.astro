@@ -1,5 +1,5 @@
 ---
-import BaseLayout2 from '../layouts/BaseLayout2.astro';
+import BaseLayoutPurple from '../layouts/BaseLayoutPurple.astro';
 const pageTitle = "About me"
 
 const identity ={
@@ -14,7 +14,7 @@ const happy = true;
 const finished = false;
 const goal = 3;
 ---
-<BaseLayout2 pageTitle={pageTitle}>
+<BaseLayoutPurple pageTitle={pageTitle}>
 	<h2>Hier lees je informatie over mezelf</h2>
 	<p>Here are a few facts about me:</p>
 
@@ -35,4 +35,4 @@ const goal = 3;
 	{finished ? <p>I finished this tutorial!</p> : <p>I am still workin on this site.</p>}
 
 	{goal === 3 && <p>My goal is to finish in 3 days.</p>}
-</BaseLayout2>
+</BaseLayoutPurple>
