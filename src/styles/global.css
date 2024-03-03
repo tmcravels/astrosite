@@ -27,6 +27,15 @@ html {
   cursor: pointer;
 }
 
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
 .hamburger .line {
   display: block;
   width: 40px;
