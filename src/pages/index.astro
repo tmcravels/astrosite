@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 const pageTitle = "Home Page"
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<h2>Welkom op de website van TMC Ravels</h2>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 	<p>Op deze website delen we onze evenementen, foto's, informatie over onze club en over de hobby. Twijfel niet om ons te contacteren als je zelf ook wilt starten met modelvliegen.</p>
 	<p>Klik <a href="https://docs.astro.build/en/tutorial/2-pages/3/">hier</a> om de tutorial verder af te maken. Momenteel zat je op stap 2.3.</p>
 </BaseLayout>
